@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "name": "João Coquim",
+        "age": 38,
+        "position": "Software Developer",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Irina Oliveira",
+        "age": 32,
+        "position": "Math Teacher",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Diogo",
+        "age": 35,
+        "position": "React Developer",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg"
+    }
+]

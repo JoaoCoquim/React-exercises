@@ -1,0 +1,40 @@
+.product {
+  text-align: center;
+  border: 1px solid grey;
+}
+
+.product-image img {
+  height: 300px;
+  width: auto;
+}
+
+.product-name {
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin: 10px;
+}
+
+.product-description {
+  color: grey;
+  width: 70%;
+  margin: 10px auto;
+}
+
+.product-price {
+  margin: 20px;
+  color: #27c8a4;
+  font-size: 30px;
+}
+
+.shop-button {
+  height: 60px;
+  background-color: #27c8a4;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
