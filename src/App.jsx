@@ -1,27 +1,63 @@
 import './App.css';
-import User from './components/User/User.jsx'
+import User from './components/User/User'
 import users from './assets/users.json'
-import Product from './components/Product/Product.jsx'
+import Product from './components/Product/Product'
 import product from './assets/product.json'
-import Button from './components/Button/Button.jsx'
-import ListaDiogo from './components/ListaDiogo/ListaDiogo.jsx'
-import Dado from './components/Dado/Dado.jsx'
+import Button from './components/Button/Button'
+import ListaDiogo from './components/ListaDiogo/ListaDiogo'
+import Dado from './components/Dado/Dado'
 import idcards from './assets/id-cards.json'
-import IdCard from './components/IdCard/IdCard.jsx'
-import Greetings from './components/Greetings/Greetings.jsx'
-import Random from './components/Random/Random.jsx'
-import BoxColor from './components/BoxColor/BoxColor.jsx'
+import IdCard from './components/IdCard/IdCard'
+import Greetings from './components/Greetings/Greetings'
+import Random from './components/Random/Random'
+import BoxColor from './components/BoxColor/BoxColor'
+import CreditCard from './components/CreditCard/CreditCard'
 
 function App() {
 
   return (
     <>
+      <div className='credit-card-container'>
+        <CreditCard
+          type="./public/images/visa.png"
+          number="0123456789018845"
+          expirationMonth={3}
+          expirationYear={2021}
+          bank="BNP"
+          owner="Maxence Bouret"
+          bgColor="#11aa99"
+          color="white"
+        />
+
+        <CreditCard
+          type="./public/images/master-card.png"
+          number="0123456789010995"
+          expirationMonth={3}
+          expirationYear={2021}
+          bank="N26"
+          owner="Maxence Bouret"
+          bgColor="#eeeeee"
+          color="#222222"
+        />
+
+        <CreditCard
+          type="./public/images/visa.png"
+          number="0123456789016984"
+          expirationMonth={12}
+          expirationYear={2028}
+          bank="ActivoBank"
+          owner="João Coquim"
+          bgColor="#ddbb55"
+          color="white"
+        />
+      </div>
+
+      {/*
       <div className='App'>
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
       </div>
 
-      {/*
       <div className='App'>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
@@ -48,7 +84,7 @@ function App() {
         <Dado />
         <Dado />
       </div>
-    
+ 
       <div className='App'>
         <ListaDiogo estado={"Cool"} >
           <div>Diogo</div>

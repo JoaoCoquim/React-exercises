@@ -15,7 +15,7 @@ function BoxColor(props) {
 
     let letteringColor;
 
-    if(g > 190) {
+    if (g > 190) {
         letteringColor = 'black';
     } else {
         letteringColor = 'white';

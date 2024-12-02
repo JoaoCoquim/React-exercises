@@ -14,16 +14,16 @@ function IdCard({ idcard }) {
                     <strong>First Name:</strong> {firstName}
                 </div>
                 <div className='card-lastName'>
-                <strong>Last Name:</strong> {lastName}
+                    <strong>Last Name:</strong> {lastName}
                 </div>
                 <div className='card-gender'>
-                <strong>Gender:</strong> {gender}
+                    <strong>Gender:</strong> {gender}
                 </div>
                 <div className='card-height'>
-                <strong>Height:</strong> {height}
+                    <strong>Height:</strong> {height}
                 </div>
                 <div className='card-birth'>
-                <strong>Birth:</strong> {new Date(birth).toDateString()}
+                    <strong>Birth:</strong> {new Date(birth).toDateString()}
                 </div>
             </div>
         </div>

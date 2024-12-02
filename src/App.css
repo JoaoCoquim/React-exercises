@@ -5,6 +5,12 @@
     margin: 0;
 }
 
+.credit-card-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
 .IdCard {
     position: absolute;
     top: 20px;

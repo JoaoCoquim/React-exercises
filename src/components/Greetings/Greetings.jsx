@@ -16,11 +16,11 @@ function Greetings(props) {
         greeting = 'Hola';
     }
 
-        return (
-            <div className="greetings-container">
-                {greeting} {props.children}
-            </div>
-        );
-    }
+    return (
+        <div className="greetings-container">
+            {greeting} {props.children}
+        </div>
+    );
+}
 
-    export default Greetings;
+export default Greetings;

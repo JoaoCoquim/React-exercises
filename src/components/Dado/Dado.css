@@ -11,10 +11,10 @@
     margin: 6px;
 }
 
-.dado .bad {
+.dado.good {
     background-color: green;
 }
 
-.dado .bad {
+.dado.bad {
     background-color: red;
 }
