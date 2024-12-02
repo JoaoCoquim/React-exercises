@@ -12,11 +12,23 @@ import Greetings from './components/Greetings/Greetings'
 import Random from './components/Random/Random'
 import BoxColor from './components/BoxColor/BoxColor'
 import CreditCard from './components/CreditCard/CreditCard'
+import Rating from './components/Rating/Rating'
 
 function App() {
 
   return (
     <>
+
+      <div className="rating-container">
+        <Rating>0</Rating>
+        <Rating>1.4</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
+      </div>
+
+      {/* 
       <div className='credit-card-container'>
         <CreditCard
           type="./public/images/visa.png"
@@ -51,8 +63,7 @@ function App() {
           color="white"
         />
       </div>
-
-      {/*
+      
       <div className='App'>
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />

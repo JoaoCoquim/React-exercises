@@ -16,25 +16,23 @@ function CreditCard({ type, number, expirationMonth, expirationYear, bank, owner
     const formattedYear = expirationYear.toString().slice(-2);
 
     return (
-        <>
-            <div className="credit-card" style={{ backgroundColor: bgColor, color: color }}>
-                <div className="card-type">
-                    <img id="card-logo" src={type} />
+        <div className="credit-card" style={{ backgroundColor: bgColor, color: color }}>
+            <div className="card-type">
+                <img id="card-logo" src={type} />
+            </div>
+            <div className="card-number">
+                {formattedCardNumber}
+            </div>
+            <div className="card-details">
+                <div className="card-info">
+                    Expires {formattedMonth} / {formattedYear}
+                    <span className="card-bank">{bank}</span>
                 </div>
-                <div className="card-number">
-                    {formattedCardNumber}
-                </div>
-                <div className="card-details">
-                    <div className="card-info">
-                        Expires {formattedMonth} / {formattedYear}
-                        <span className="card-bank">{bank}</span>
-                    </div>
-                    <div className="card-owner">
-                        {owner}
-                    </div>
+                <div className="card-owner">
+                    {owner}
                 </div>
             </div>
-        </>
+        </div>
     )
 
 }
