@@ -6,15 +6,30 @@ function Greetings(props) {
 
     let greeting;
 
-    if (lang === 'de') {
-        greeting = 'Hallo';
-    } else if (lang === 'de') {
-        greeting = 'Bonjour';
-    } else if (lang === 'pt') {
-        greeting = 'Olá';
-    } else {
-        greeting = 'Hola';
+    switch (lang) {
+        case 'de':
+            greeting = 'Hallo';
+            break;
+        case 'fr':
+            greeting = 'Bonjour';
+            break;
+        case 'pt':
+            greeting = 'Olá';
+            break;
+        default:
+            greeting = 'Hola';
+            break;
     }
+
+    // if (lang === 'de') {
+    //     greeting = 'Hallo';
+    // } else if (lang === 'fr') {
+    //     greeting = 'Bonjour';
+    // } else if (lang === 'pt') {
+    //     greeting = 'Olá';
+    // } else {
+    //     greeting = 'Hola';
+    // }
 
     return (
         <div className="greetings-container">

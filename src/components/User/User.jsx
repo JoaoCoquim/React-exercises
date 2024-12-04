@@ -1,29 +1,39 @@
-import './User.css'
+import React from 'react'
+import "./User.css"
 
 function User(props) {
 
-    //const user = props.user;
-    const { user } = props;
+    const { user, eliminarUser } = props
+
+    const handleClick = () => {
+        eliminarUser(user.id)
+    }
 
     return (
-        <div className='user'>
-            <div className='info'>
-                {user.name}
+        <>
+            <div className='user-data'>
+                <div className='user-image'>
+                    <img src={user.image} />
+                </div>
+                <div className='user-details'>
+                    <div >
+                        {user.name}
+                    </div>
+                    <div>
+                        {user.age}
+                    </div>
+                    <div>
+                        {user.position}
+                    </div>
+                </div>
             </div>
-
-            <div className='info'>
-                {user.age}
-            </div>
-
-            <div className='info'>
-                {user.position}
-            </div>
-
-            <div className='info'>
-                <img src={user.image} />
-            </div>
-        </div>
+            <button
+                className='delete-user-btn'
+                onClick={handleClick}>
+                Delete User
+            </button>
+        </>
     )
 }
 
-export default User;
+export default User

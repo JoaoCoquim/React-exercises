@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react'
 import User from './components/User/User'
 import users from './assets/users.json'
 import Product from './components/Product/Product'
@@ -14,11 +15,31 @@ import BoxColor from './components/BoxColor/BoxColor'
 import CreditCard from './components/CreditCard/CreditCard'
 import Rating from './components/Rating/Rating'
 import DriverCard from './components/DriverCard/DriverCard'
+import LikeButton from './components/LikeButton/LikeButton';
+import usersJSON from './assets/users.json'
+import UsersPage from './components/UsersPage/UsersPage';
 
 function App() {
 
   return (
     <>
+      <UsersPage />
+
+      {/* 
+      <div className='App'>
+        <LikeButton />
+        <LikeButton />
+        <LikeButton />
+      </div>
+
+      <div>
+        <button
+          style={{ backgroundColor: numero > 40 && 'yellow'}}
+          onClick={handleClick}>
+          {numero}
+        </button>
+      </div>
+
       <div>
         <DriverCard
           name="Travis Kalanick"
@@ -41,7 +62,6 @@ function App() {
         />
       </div>
 
-      {/* 
       <div className="rating-container">
         <Rating>0</Rating>
         <Rating>1.4</Rating>
@@ -138,7 +158,6 @@ function App() {
       <div className='Button'>
         {users.map(user => <Button user={user} />)}
       </div> */}
-
     </>
   )
 }

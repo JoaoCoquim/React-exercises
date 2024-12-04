@@ -4,7 +4,7 @@ function Random(props) {
 
     const { min, max } = props;
 
-    let random = Math.floor(Math.random() * max) + min;
+    let random = Math.floor(Math.random() * (max - min + 1)) + min;
 
     return (
         <div className='random-generator'>
