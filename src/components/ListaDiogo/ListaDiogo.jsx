@@ -1,8 +1,9 @@
+import React from "react";
 import "./ListaDiogo.css";
 
 function ListaDiogo(props) {
 
-    const { children } = props.children;
+    const { children, estado } = props;
 
     return (
         <div className="lista-diogo">

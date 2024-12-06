@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "firstName": "Sean",
+        "lastName": "Kong",
+        "age": 32,
+        "address": "Porto",
+        "studentId": 1991,
+        "favoriteLunch": "Lasanha",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg"
+    },
+    {
+        "id": 1,
+        "firstName": "Pedro",
+        "lastName": "Gonçalves",
+        "age": 39,
+        "address": "Aveiro",
+        "studentId": 1992,
+        "favoriteLunch": "Pizza",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg"
+    },
+    {
+        "id": 2,
+        "firstName": "Irina",
+        "lastName": "Oliveira",
+        "age": 32,
+        "address": "Porto",
+        "studentId": 1993,
+        "favoriteLunch": "Francesinha",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg"
+    },
+    {
+        "id": 3,
+        "firstName": "Sakura",
+        "lastName": "Kinomoto",
+        "age": 30,
+        "address": "Tomoeda",
+        "studentId": 1994,
+        "favoriteLunch": "Noodles",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg"
+    }
+]

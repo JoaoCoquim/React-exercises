@@ -11,24 +11,6 @@
     gap: 10px;
   }
 
-.IdCard {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-.Product {
-    position: absolute;
-    top: 40px;
-    right: 500px;
-}
-
-.Button {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-}
-
 .yellow{
     color: yellow;
 }

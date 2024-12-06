@@ -1,9 +1,7 @@
 import React from 'react'
 import "./User.css"
 
-function User(props) {
-
-    const { user, eliminarUser } = props
+function User({ user, eliminarUser }) {
 
     const handleClick = () => {
         eliminarUser(user.id)

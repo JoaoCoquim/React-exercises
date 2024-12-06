@@ -8,16 +8,23 @@ function UsersPage() {
 
     // Código estranho do stor - não esquecer de estudar a função .sort()
     const obterNovoUser = () => {
-        const sortedUsers = users.sort((a, b) => a.id - b.id)
+        // sort ordena com uso padrão: espera que a função devolva valor negativo, zero ou positivo
+        const sortedUsers = [...users].sort((a, b) => a.id - b.id)
+        // vai buscar o ID do ultimo elemento do array e adiciona 1
         const newId = sortedUsers[sortedUsers.length - 1].id + 1
+
+        // Obtém o próximo ID disponível: maior ID atual + 1 (valor inicial 0 para array vazio)
+        //const newId = Math.max(...users.map(user => user.id), 0) + 1;
+
         const newUser = {
             ...users[0],
             id: newId,
-            name: 'Sean Kong',
-            age: 32,
-            position: 'Ruby Developer'
+            name: `New User ${newId}`,
+            age: Number(`${newId}`) + 30,
+            position: `Junior Developer ${newId}`
         }
-        return newUser
+
+        return newUser;
     }
 
     const eliminarUser = (idParaEliminar) => {

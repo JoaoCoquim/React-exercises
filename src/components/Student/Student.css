@@ -1,0 +1,37 @@
+.student-data {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.student-photo {
+    display: flex;
+    align-items: center;
+}
+
+.student-photo img {
+    height: 130px;
+    width: auto;
+}
+
+.student-details {
+    font-size: 0.9rem;
+    color: black;
+    margin-left: 10px;
+    width: 300px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.delete-user-btn {
+    background-color: red;
+    color: white;
+    margin-left: 10px;
+}
+
+.delete-user-btn:hover {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    margin-left: 10px;
+}
