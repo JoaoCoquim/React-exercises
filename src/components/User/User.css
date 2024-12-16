@@ -6,6 +6,7 @@
 .user-image{
   display: flex;
   align-items: center;
+  margin-bottom: 2px;
 }
 
 .user-image img{
@@ -21,13 +22,15 @@
   margin-left: 10px;
 }
 
-.delete-user-btn{
+.deleteBtn{
   background-color: red;
   color: white;
+  padding: 10px;
+  width: 100px;
   margin-bottom: 10px;
 }
 
-.delete-user-btn:hover{
+.deleteBtn:hover{
   background-color: white;
   color: red;
   border: 1px solid red;

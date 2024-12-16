@@ -1,0 +1,15 @@
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.userImg img {
+    width: 200px;
+}
+
+.userDetails p {
+    margin: 5px 0;
+}
