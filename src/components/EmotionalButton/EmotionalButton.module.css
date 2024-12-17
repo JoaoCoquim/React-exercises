@@ -1,0 +1,8 @@
+.imgContainer {
+    width: 100px;
+    height: auto;
+}
+
+.borderedBtn {
+    border: 1px solid grey;
+}
